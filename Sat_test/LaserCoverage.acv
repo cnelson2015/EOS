@@ -1,0 +1,149 @@
+stk.v.11.0
+WrittenBy    STK_v11.4.0
+
+BEGIN AttitudeCoverage
+
+    Name		 LaserCoverage
+
+    BEGIN GridDefinition
+
+        VersionIndicator		 20080103
+        BEGIN Global
+        END Global
+        LatResolution		 1.0000000000000000e+01
+        LonResolution		 1.0000000000000000e+01
+        UsePolarRegions		 No
+        GridClass		 Sensor
+        SeedInstance		 Satellite/EOS/Sensor/LaserComm
+        UseCopyOfSeed		 No
+        PointLocationMethod		 EqualArea
+        CustomPtAltMethod		 ValueFromFile
+        CentralBody		 Earth
+        GroundAltMethod		 UseAltType
+        GroundAlt		 0
+        AltitudeMethod		 Altitude
+        BEGIN AltitudeList
+            0.000000
+        END AltitudeList
+
+    END GridDefinition
+
+    BEGIN AccessDefinition
+
+        DataRetention		 AllData
+        Convergence		 0.005
+        AbsValueConvergence		 1e-14
+        RelValueConvergence		 1e-08
+        MaxTimeStep		 360
+        MinTimeStep		 0.01
+        UseLightTimeDelay		 No
+        TimeSense		 PerAsset
+        DetectEventsUsingSamplesOnly		 No
+        AutoRecompute		 Yes
+        UseAllAssetAccess		 No
+        AssetSatisType		 AtLeast
+        AssetSatisThreshold		 1
+        AccessSaveMode		 SaveWith
+        RegionAccessAccel		 Auto
+
+    END AccessDefinition
+
+    BEGIN AssetList
+
+        Chain/Laser_ground		 Active
+        Required		 Yes
+
+    END AssetList
+
+    BEGIN Interval
+
+        AccStart		 29 Jan 2019 05:00:00.000000000
+        AccStop		 30 Jan 2019 05:00:00.000000000
+        UseScenarioInterval		 No
+        AccIntervalPtr		
+        BEGIN EVENTINTERVAL
+            StartEvent		
+            BEGIN EVENT
+                Epoch		 Today
+                EventEpoch		
+                BEGIN EVENT
+                    Type		 EVENT_LINKTO
+                    Name		 Today
+                    AbsolutePath		 Scenario
+                END EVENT
+                EpochState		 Implicit
+            END EVENT
+            StopEvent		
+            BEGIN EVENT
+                Epoch		 Tomorrow
+                EventEpoch		
+                BEGIN EVENT
+                    Type		 EVENT_LINKTO
+                    Name		 Tomorrow
+                    AbsolutePath		 Scenario
+                END EVENT
+                EpochState		 Implicit
+            END EVENT
+            IntervalState		 StartStop
+        END EVENTINTERVAL
+
+
+    END Interval
+
+    BEGIN AttitudeCovData
+
+        Reference		
+        Body		 ../
+        UseGridVector		 No
+
+    END AttitudeCovData
+
+    BEGIN Extensions
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+        END AccessConstraints
+
+        BEGIN Desc
+        END Desc
+
+        BEGIN Graphics
+
+            BEGIN Attributes
+
+                GridMarkerStyle		 1
+                GridColor		 #00ffff
+                ProgressColor		 #ffff00
+                SatisfactionColor		 #ff00ff
+                GridTranslucency		 0.5
+                SatisfactionTranslucency		 0.7000000000000001
+
+            END Attributes
+
+            BEGIN Graphics
+
+                Show		 Yes
+                ShowGrid		 Yes
+                ShowRegions		 No
+                ShowRegionsText		 No
+                ShowPoints		 Yes
+                FillPoints		 No
+                ShowProgress		 Yes
+                ShowSatisfaction		 No
+
+            END Graphics
+        END Graphics
+
+        BEGIN VO
+        END VO
+
+    END Extensions
+
+    BEGIN SubObjects
+
+    END SubObjects
+
+END AttitudeCoverage
+

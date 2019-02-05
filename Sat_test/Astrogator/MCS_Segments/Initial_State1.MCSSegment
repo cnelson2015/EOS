@@ -1,0 +1,105 @@
+<!-- STKv4.0 Format="XML" -->
+<STKOBJECT>
+<OBJECT Class = "MCSSegment" Name = "Initial_State1">
+    <OBJECT Class = "string" Name = "AnomType"> &quot;True Anomaly&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "BeenRun"> False </OBJECT>
+    <OBJECT Class = "container" Name = "BPlanes" />
+    <OBJECT Class = "string" Name = "Category"> &quot;@Top&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "Clonable"> True </OBJECT>
+    <OBJECT Class = "link" Name = "CoordinateSystem">
+        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "CoordinateType"> &quot;Cartesian&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "Description"> &quot;Initializes state data&quot; </OBJECT>
+    <OBJECT Class = "link" Name = "DisplayCoordSystem">
+        <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "EquinoctialFormulation"> &quot;Posigrade&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "EquinoctialSizeType"> &quot;Semi-major Axis&quot; </OBJECT>
+    <OBJECT Class = "AttrCon" Name = "FinalState">
+        <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+            <OBJECT Class = "container" Name = "Cartesian">
+                <OBJECT Class = "double" Name = "X"> 6678137 m </OBJECT>
+                <OBJECT Class = "double" Name = "Y"> 0 m </OBJECT>
+                <OBJECT Class = "double" Name = "Z"> 0 m </OBJECT>
+                <OBJECT Class = "double" Name = "Vx"> 0 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vy"> 6789.530300272665 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vz"> 3686.414174400911 m*sec^-1 </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "CoordSysRep">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+            <OBJECT Class = "date" Name = "Epoch"> &quot;1 Jul 2009 15:00:34.000000000&quot; TAIG </OBJECT>
+            <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+            <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+            <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+            <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+            <OBJECT Class = "container" Name = "UserVariables" />
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "FlightPathAngleType"> &quot;Horizontal Flight Path Angle&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "GeodeticAltRadRateType"> &quot;Altitude rate&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "GeodeticAltRadType"> &quot;Altitude&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "GType"> &quot;G&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "HType"> &quot;H&quot; </OBJECT>
+    <OBJECT Class = "AttrCon" Name = "InitialState">
+        <OBJECT Class = "Orbit_State" Name = "Orbit_State">
+            <OBJECT Class = "container" Name = "Cartesian">
+                <OBJECT Class = "double" Name = "X"> 6678137 m </OBJECT>
+                <OBJECT Class = "double" Name = "Y"> 0 m </OBJECT>
+                <OBJECT Class = "double" Name = "Z"> 0 m </OBJECT>
+                <OBJECT Class = "double" Name = "Vx"> 0 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vy"> 6789.530300272665 m*sec^-1 </OBJECT>
+                <OBJECT Class = "double" Name = "Vz"> 3686.414174400911 m*sec^-1 </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cd"> 2.2 &quot;&quot; </OBJECT>
+            <OBJECT Class = "link" Name = "CoordSysRep">
+                <OBJECT Class = "string" Name = ""> &quot;CentralBody/Earth Inertial&quot; </OBJECT>
+            </OBJECT>
+            <OBJECT Class = "double" Name = "Cr"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "DragArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "DryMass"> 500 kg </OBJECT>
+            <OBJECT Class = "date" Name = "Epoch"> &quot;10 Oct 2018 16:00:37.000000000&quot; TAIG </OBJECT>
+            <OBJECT Class = "double" Name = "FuelDensity"> 1000 kg*m^-3 </OBJECT>
+            <OBJECT Class = "double" Name = "FuelMass"> 500 kg </OBJECT>
+            <OBJECT Class = "double" Name = "K1"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "K2"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "RadPressureCoeff"> 1 &quot;&quot; </OBJECT>
+            <OBJECT Class = "double" Name = "SRPArea"> 20 m^2 </OBJECT>
+            <OBJECT Class = "double" Name = "TankPressure"> 5000 Pa </OBJECT>
+            <OBJECT Class = "double" Name = "TankTemperature"> 293.15 K </OBJECT>
+            <OBJECT Class = "container" Name = "UserVariables" />
+        </OBJECT>
+    </OBJECT>
+    <OBJECT Class = "string" Name = "KeplerianElementType"> &quot;Osculating&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "LastRunCode"> &quot;Marching&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "LType"> &quot;L&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "MixedFlightPathAngleType"> &quot;Horizontal Flight Path Angle&quot; </OBJECT>
+    <OBJECT Class = "string" Name = "NodeType"> &quot;Right Asc. of Asc. Node&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "ReadOnly"> False </OBJECT>
+    <OBJECT Class = "container" Name = "ResultsSelected" />
+    <OBJECT Class = "ListLink" Name = "Results" />
+    <OBJECT Class = "string" Name = "RunDirection"> &quot;Forward&quot; </OBJECT>
+    <OBJECT Class = "int" Name = "SegmentColor"> 65280 </OBJECT>
+    <OBJECT Class = "string" Name = "ShapeType"> &quot;Eccentricity&quot; </OBJECT>
+    <OBJECT Class = "container" Name = "ShooterControls" />
+    <OBJECT Class = "string" Name = "SizeType"> &quot;Semi-major Axis&quot; </OBJECT>
+    <OBJECT Class = "int" Name = "STKVersion"> 1140 </OBJECT>
+    <OBJECT Class = "bool" Name = "TreeNodeExpanded"> False </OBJECT>
+    <OBJECT Class = "string" Name = "Type"> &quot;InitialState&quot; </OBJECT>
+    <OBJECT Class = "bool" Name = "UpdateAnimationTimeAfterRunning"> False </OBJECT>
+    <OBJECT Class = "string" Name = "UserComment"> &quot;Initializes state data&quot; </OBJECT>
+    <OBJECT Class = "container" Name = "UserVariables" />
+    <OBJECT Class = "string" Name = "Version"> &quot;1.0.0 a&quot; </OBJECT>
+</OBJECT>
+</STKOBJECT>
